@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         // Kotlin 如果一个函数最后一个参数是 Lambda，可以将其写在括号外
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
             when (position) {
-                0 -> tab.text = applicationContext.resources.getText(R.string.rotate_text)
-                1 -> tab.text = applicationContext.resources.getText(R.string.scale_text)
+                0 -> tab.text = applicationContext.resources.getText(R.string.scale_text)
+                1 -> tab.text = applicationContext.resources.getText(R.string.rotate_text)
                 else -> tab.text = applicationContext.resources.getText(R.string.translate_text)
             }
         }.attach()
